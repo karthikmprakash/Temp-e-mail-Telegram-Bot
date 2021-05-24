@@ -100,6 +100,7 @@ def main() -> None:
     # SIGTERM or SIGABRT
     updater.idle()
 
+app = main()
 
 if __name__ == '__main__':
     main()
