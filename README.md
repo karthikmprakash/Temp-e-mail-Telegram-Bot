@@ -1,3 +1,10 @@
+[![Forks][forks-shield]][https://github.com/karthikmprakash/Temp_email_Telegram_bot/network/members]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
 # Temporary Email genration with Telegram Bot: Project Overview 
 * Created a bot to generate username ,  temporary email and password for websites that could potentially track your personal data.
 * It uses the 10minmail service to generate a new email instance and returns back to the user. 
