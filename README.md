@@ -7,8 +7,8 @@
 **Python Version:** 3.7  
 **Packages:** python-telegram-bot requests beautifulsoup4 python-dotenv urllib3   
 **For Web Framework Requirements:**  ```pip install -r requirements.txt```  
-**Pyhton-telegram-bot Github:** https://github.com/python-telegram-bot/python-telegram-bot \n
-**Telegram Bot API:** https://core.telegram.org/bots/api#message \n
+**Pyhton-telegram-bot Github:** https://github.com/python-telegram-bot/python-telegram-bot
+**Telegram Bot API:** https://core.telegram.org/bots/api#message 
 **Telegram Bot Documentation:** https://python-telegram-bot.readthedocs.io/en/stable/index.html
 
 
