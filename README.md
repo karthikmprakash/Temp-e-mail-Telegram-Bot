@@ -2,13 +2,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="logo_enhanced.png" alt="Logo" width="80" height="80">
+    <img src="./logo_enhanced.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">temp-e-mail</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A handy bot to fetch temporary emails for your next Signup!
     <br />
     <a href="https://github.com/karthikmprakash/Temp-e-mail-Telegram-Bot"><strong>Explore the docs »</strong></a>
     <br />
@@ -36,6 +36,7 @@
 **Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
 ## Working Model  
+
 > Anyone can make use of the bot by searching for **@temp_e_mail_bot** in the telegram messenger
 
 <img src="./image/Screenshot1.jpg" width="300" height="Auto"><img src="./image/Screenshot2.jpg" width="300" height="Auto"><img src="./image/Screenshot3.jpg" width="300" height="Auto">
