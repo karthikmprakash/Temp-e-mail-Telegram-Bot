@@ -43,7 +43,14 @@
 <img src="./image/Screenshot1.jpg" width="250" height="Auto"><img src="./image/Screenshot2.jpg" width="250" height="Auto"><img src="./image/Screenshot3.jpg" width="250" height="Auto">
 
 ## Productionization 
-After 
+There are bunch of different ways to get the bot up and working. Its feasible to use polling while testing the bot in the local environment but once its in the production stage its better to use webhooks with a cloud server or also you can build your own. 
+
+  * Deployment on a Raspberry Pi
+  * IAAS Servers for ex: Amazon AWS , MS Azure
+  * PAAS Server for ex: Heroku , Rackspace 
+ 
+ 
+
 
 
 
