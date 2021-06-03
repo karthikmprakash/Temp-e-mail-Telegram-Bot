@@ -42,6 +42,7 @@ def generateEmailIdAndLink():
 
     # using request.get on https://10minutemail.net/ site, and pass header as extra data
     response = requests.get('https://10minutemail.net/', headers=headers)
+    
     # the response has session Id required to retrieve email and link
     ses = str(response.cookies).split(",")[2].split(" ")[2]
 
