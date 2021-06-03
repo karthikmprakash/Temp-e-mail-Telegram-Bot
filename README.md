@@ -6,10 +6,10 @@
     <img src="./image/test.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Temp-e-mail</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A handy bot to fetch temporary emails for your next Signup!
     <br />
     <a href="https://github.com/karthikmprakash/Temp-e-mail-Telegram-Bot"><strong>Explore the docs »</strong></a>
     <br />
