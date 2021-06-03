@@ -8,7 +8,9 @@ import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update ,User, ParseMode ,ForceReply, KeyboardButton ,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext , Filters , MessageHandler
 import requests
+import telegram
 from TempMail import temp
+import time
 
 
 logging.basicConfig(
@@ -16,6 +18,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def get_chat_id(update:Update, _:CallbackContext):
+    chat_id = -1
+
+    if update.message is not None:
+        chat_id = update.message.chat.id
+    elif update.callback_query is not None:
+        chat_id = update.callback_query.message.chat.id
+    elif update.poll is not None:
+        chat_id = _.bot_data[update.poll.id]
+
+    return chat_id
 
 def start(update: Update, _: CallbackContext) -> None:
     user = update.message.from_user
@@ -30,23 +43,26 @@ def start(update: Update, _: CallbackContext) -> None:
         ],
         [KeyboardButton("Get all three!")],
     ]
-    reply_markup = ReplyKeyboardMarkup(keyboard) 
+    reply_markup = ReplyKeyboardMarkup(keyboard,resize_keyboard=True) 
     update.message.reply_text('Please choose:', reply_markup=reply_markup)                     
 
 def button(update: Update, _: CallbackContext) -> None:
     query = update.message.text
     print(query)
+
+    add_typing(update,_)
+
     if query == 'Name':
         msg = temp.generateNames()
         update.message.reply_text(f" {msg}",parse_mode=ParseMode.HTML)
     
     elif query == "Password":
         msg = temp.generatePassword(8)
-        update.message.reply_text(f" {msg}",parse_mode=ParseMode.HTML)
+        update.message.reply_text(f"{msg}")
 
     elif query == 'Email':
         email , email_url = temp.generateEmailIdAndLink()
-        update.message.reply_text(f'{email}')
+        update.message.reply_text(f'Email : {email}')
         update.message.reply_text(f'Click here to access your 10min email: {email_url}')
 
     
@@ -78,6 +94,11 @@ def get_password(update:Update, _: CallbackContext) -> None:
 
 def get_email(update:Update, _: CallbackContext) -> None:
     email, email_link = temp.generateEmailIdAndLink()
+
+
+def add_typing(update: Update, _: CallbackContext) -> None:
+    _.bot.send_chat_action(chat_id=get_chat_id(update,_), action=telegram.ChatAction.TYPING, timeout=1)
+    time.sleep(1)
     
 
 def help_command(update: Update, _: CallbackContext) -> None:
@@ -100,7 +121,7 @@ def main() -> None:
     # SIGTERM or SIGABRT
     updater.idle()
 
-app = main()
+#app = main()
 
 if __name__ == '__main__':
     main()
