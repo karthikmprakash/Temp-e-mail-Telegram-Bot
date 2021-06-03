@@ -1,18 +1,14 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-
-    <img src="./image/test.png" alt="Logo" width="80" height="80">
+    <img src="logo_enhanced.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Temp-e-mail</h3>
+  <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    A handy bot to fetch temporary emails for your next Signup!
-
-
+    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/karthikmprakash/Temp-e-mail-Telegram-Bot"><strong>Explore the docs »</strong></a>
     <br />
@@ -40,17 +36,11 @@
 **Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
 ## Working Model  
-
-> Anyone can make use of the bot by searching for **@temp_e_mail_bot** in the telegram messenger. Here are some screenshots of the working bot. 
-
-<img src = "./image/Screenshot1.jpg" width=300 height=Auto><img src = "./image/Screenshot2.jpg" width=300 height=Auto><img src = "./image/Screenshot3.jpg" width=300 height=Auto>
-
+Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
+![]()
 
 ## Productionization 
-There are several ways to get the bot to working, for running on local environment i.e running the python file locally, polling would be a good option to start with. After webhooks integration we can narrow down into few options. 
-* Bot deployment on a Raspberry Pi 
-* IAAS Servers for ex: Amazon AWS with EC2 , MS Azure
-* PAAS Servers for ex: Heroku
+After 
 
 
 
@@ -61,4 +51,18 @@ There are several ways to get the bot to working, for running on local environme
 
 
 
-
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/karthikmprakash/Temp_email_Telegram_bot/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
