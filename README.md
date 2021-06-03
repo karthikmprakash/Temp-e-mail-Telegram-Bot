@@ -37,13 +37,16 @@
 **Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
 ## Working Model  
-Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
-<img src = "./image/Screenshot1.jpg" width=250 height=600>
-![](./image/Screenshot2.jpg | width=100)
-![](./image/Screenshot3.jpg | width=100)
+Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger. Here are some screenshots of the working bot. 
+
+<img src = "./image/Screenshot1.jpg" width=300 height=Auto><img src = "./image/Screenshot2.jpg" width=300 height=Auto><img src = "./image/Screenshot3.jpg" width=300 height=Auto>
+
 
 ## Productionization 
-After 
+There are several ways to get the bot to working, for running on local environment i.e running the python file locally, polling would be a good option to start with. After webhooks integration we can narrow down into few options. 
+* Bot deployment on a Raspberry Pi 
+* IAAS Servers for ex: Amazon AWS with EC2 , MS Azure
+* PAAS Servers for ex: Heroku
 
 
 
