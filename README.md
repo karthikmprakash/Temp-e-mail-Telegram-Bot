@@ -39,6 +39,7 @@
 
 > Anyone can make use of the bot by searching for **@temp_e_mail_bot** in the telegram messenger
 
+<p align="center">
 <img src="./image/Screenshot1.jpg" width="250" height="Auto"><img src="./image/Screenshot2.jpg" width="250" height="Auto"><img src="./image/Screenshot3.jpg" width="250" height="Auto">
 
 ## Productionization 
