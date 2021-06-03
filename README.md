@@ -37,7 +37,7 @@
 **Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
 ## Working Model  
-Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger. Here are some screenshots of the working bot. 
+> Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger. Here are some screenshots of the working bot. 
 
 <img src = "./image/Screenshot1.jpg" width=300 height=Auto><img src = "./image/Screenshot2.jpg" width=300 height=Auto><img src = "./image/Screenshot3.jpg" width=300 height=Auto>
 
