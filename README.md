@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="logo_enhanced.png" alt="Logo" width="80" height="80">
+    <img src="./image/test.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -38,7 +38,9 @@
 
 ## Working Model  
 Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
-![]()
+![](./image/Screenshot1.jpg)
+![](./image/Screenshot2.jpg)
+![](./image/Screenshot3.jpg)
 
 ## Productionization 
 After 
