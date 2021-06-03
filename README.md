@@ -21,10 +21,11 @@
 </p>
 
 
-# Temporary Email genration with Telegram Bot: Project Overview 
+# Temporary Email genration with Telegram Bot: Overview 
 * Created a bot to generate username ,  temporary email and password for websites that could potentially track your personal data.
 * It uses the 10minmail service to generate a new email instance and returns back to the user. 
 * Users can easily interact with the bot with the Markup Keyboard that primarily focuses on the Bot's features
+* Uses webhooks instead of polling to increase the bots response time and for effecient requests handling
 
 ## Code and Resources Used 
 **Python Version:** 3.7  
@@ -33,12 +34,15 @@
 **Pyhton-telegram-bot Github:** https://github.com/python-telegram-bot/python-telegram-bot    
 **Telegram Bot API:** https://core.telegram.org/bots/api#message   
 **Telegram Bot Documentation:** https://python-telegram-bot.readthedocs.io/en/stable/index.html  
-**Telegram Bot Reference:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
+**Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
 ## Working Model  
+Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
+![]()
 
 ## Productionization 
-In this step, I built a flask API endpoint that was hosted on a local webserver by following along with the TDS tutorial in the reference section above. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary. 
+After 
+
 
 
 
