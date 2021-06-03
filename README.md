@@ -38,9 +38,9 @@
 
 ## Working Model  
 Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
-![](./image/Screenshot1.jpg)
-![](./image/Screenshot2.jpg)
-![](./image/Screenshot3.jpg)
+![](./image/Screenshot1.jpg | width=100)
+![](./image/Screenshot2.jpg | width=100)
+![](./image/Screenshot3.jpg | width=100)
 
 ## Productionization 
 After 
