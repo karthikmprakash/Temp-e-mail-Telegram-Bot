@@ -38,7 +38,7 @@
 
 ## Working Model  
 Anyone can make use of the bot by searching for @temp_e_mail_bot in the telegram messenger
-<img src = "./image/Screenshot1.jpg" width=100 height=100>
+<img src = "./image/Screenshot1.jpg" width=250 height=600>
 ![](./image/Screenshot2.jpg | width=100)
 ![](./image/Screenshot3.jpg | width=100)
 
