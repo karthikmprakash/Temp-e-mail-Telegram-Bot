@@ -35,6 +35,12 @@
 **Telegram Bot Documentation:** https://python-telegram-bot.readthedocs.io/en/stable/index.html  
 **Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
 
+## Usage
+* git clone https://github.com/karthikmprakash/Temp-e-mail-Telegram-Bot.git
+* edit the file `main.py` by adding your telegram bot API Token
+* Then in the terminal ```bash python3 main.py``` , your bot should start sending responses
+
+
 ## Working Model  
 
 > Anyone can make use of the bot by searching for **@temp_e_mail_bot** in the telegram messenger
