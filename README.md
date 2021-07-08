@@ -33,13 +33,50 @@
 **Pyhton-telegram-bot Github:** https://github.com/python-telegram-bot/python-telegram-bot    
 **Telegram Bot API:** https://core.telegram.org/bots/api#message   
 **Telegram Bot Documentation:** https://python-telegram-bot.readthedocs.io/en/stable/index.html  
-**Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py 
+**Telegram Webhooks:** https://github.com/gcatanese/TelegramBotDemo/blob/main/telegram_bot/telegram_bot.py
+**Run on Boot(Linux):** https://tecadmin.net/setup-autorun-python-script-using-systemd/
 
 ## Usage
 * git clone https://github.com/karthikmprakash/Temp-e-mail-Telegram-Bot.git
 * edit the file `main.py` by adding your telegram bot API Token
 * Then in the terminal ```bash python3 main.py``` , your bot should start sending responses
 
+### To run the script on system reboot (Ubuntu)
+1. Have the python application ready
+2. Create a [Service File](https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files)
+    - The file must have .service extension under /lib/systemd/system/ directory
+    - ```bash 
+      sudo vi /lib/systemd/system/telegram_bot.service
+      ```
+    - and add the following content in it. Change Python script filename ad location. Also update the Description.
+    - ```bash
+      [Unit]
+      Description=Dummy Service
+      After=multi-user.target
+      Conflicts=getty@tty1.service
+
+      [Service]
+      Type=simple
+      ExecStart=/usr/bin/python3 /home/user-directory/path-to-python-script
+      StandardInput=tty-force
+
+      [Install]
+      WantedBy=multi-user.target
+      ```
+3. Enable Newly Added Service
+    - Your system service has been added to your service. Let’s reload the systemctl daemon to read new file. You need to reload this deamon each time after making any changes         in in .service file.
+    - ```bash
+      sudo systemctl daemon-reload
+      ```
+    - Now enable the service to start on system boot, also start the service using the following commands.
+    - ```bash
+      sudo systemctl enable telegram_bot.service
+      sudo systemctl start telegram_bot.service
+      ```
+    - Finally check the status of your service as following command
+    - ```bash
+      sudo systemctl status telegram_bot.service
+      ```
 
 ## Working Model  
 
